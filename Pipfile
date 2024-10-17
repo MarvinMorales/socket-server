@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+server = "uvicorn server:app --reload --host 0.0.0.0 --port 8000 --ws-ping-interval 10 --ws-ping-timeout 20"
+
+[packages]
+websockets = "*"
+asyncio = "*"
+keyboard = "*"
+pynput = "*"
+fastapi = "*"
+uvicorn = "*"
+pyaudio = "*"
+pydub = "*"
+sounddevice = "*"
+numpy = "*"
+opencv-python = "*"
+cryptography = "*"
+pycryptodome = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
